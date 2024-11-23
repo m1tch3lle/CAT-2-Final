@@ -1,0 +1,25 @@
+Reflection on Initial Approach: Overall, the initial approach worked well. Breaking the project into smaller, manageable steps helped streamline development. Starting with the board setup and game loop allowed me to build a solid foundation before implementing more complex features like capturing stones and extra turns. The focus on incremental testing ensured that issues were caught early and resolved efficiently.
+
+Significant Changes to the Plan:
+Input Handling Enhancements: Initially, the plan was to use basic input validation for valid moves. However, to improve user experience, I implemented additional checks to guide players if their input was invalid (e.g., out-of-range pits or selecting from an empty pit).
+Debugging Display: I added temporary debugging outputs to track the state of pits and stores during development. This proved invaluable for testing complex mechanics like capturing stones and extra turns.
+Game End Logic Refinement: While initially straightforward, handling the transfer of remaining stones required revisiting and tweaking the code to ensure edge cases (e.g., simultaneous emptying of pits) were handled correctly.
+
+Challenges and Obstacles:
+Stone Distribution Logic: Implementing the mechanics for sowing stones across the board was trickier than expected due to the need to handle wrapping around and skipping the opponent's store.
+Solution: I used modular arithmetic to manage wrapping and carefully structured the loops to check for the active player's store.
+Testing Special Cases: Ensuring rules for extra turns and capturing stones were correctly applied in all scenarios required extensive testing.
+Solution: Incremental testing with specific setups helped validate edge cases.
+User Clarity: Displaying the board state in a clear and user-friendly way was initially challenging.
+Solution: I refined the board display logic to align pits visually and clearly label stores and pits for both players.
+
+Key Takeaways:
+Importance of Planning: A clear plan before coding is essential for managing complex rules and logic.
+Incremental Development: Building and testing small pieces of functionality helped ensure correctness and made debugging easier.
+User Experience Matters: Even in a text-based game, clear input/output design improves the overall experience for players.
+Adaptability: Adjusting plans as challenges arise is critical. The debugging outputs and refined input handling were unplanned but necessary changes.
+
+What I Learned:
+Translating real-world game mechanics into code requires careful consideration of edge cases and clear logic.
+Writing modular code for specific tasks (e.g., validating moves, checking end conditions) makes it easier to maintain and test.
+A focus on user experience, even in simple projects, can make a big difference in how the project is received.

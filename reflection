@@ -1,0 +1,39 @@
+Initial Thoughts and Approach to the Ayoayo Project
+Understanding of Ayoayo Rules: It is a two-player strategy game where each player has six pits and a store. The objective is to collect the most stones in your store by the end of the game. Players take turns picking stones from one of their pits and "sowing" them counterclockwise into subsequent pits and their store. If the last stone lands in an empty pit on the player's side, they capture stones from the opposite pit. The game ends when one player has no stones left in their pits.
+
+Initial Approach:
+
+Game Representation:
+Use arrays to represent the pits for each player (player1Pits and player2Pits).
+Use integers to represent each player's store (player1Store and player2Store).
+
+Game Flow:
+Create a loop to alternate turns between the two players until the game ends.
+Ensure input validation so players only select valid pits.
+Handle special cases like earning an extra turn or capturing stones.
+
+Game End Conditions:
+The game ends when one player's pits are all empty.
+Remaining stones in the other player’s pits are moved to their store.
+
+Scoring and Winner:
+Compare the number of stones in each player's store at the end of the game to determine the winner.
+
+Challenges and Worries:
+Validating Moves: Ensuring players only select valid pits (non-empty and on their side).
+Game Logic: Implementing special rules like earning extra turns and capturing stones might require careful indexing and checks.
+End Condition: Properly determining when the game ends and handling the transfer of remaining stones.
+User Experience: Presenting the board in a clear and intuitive format for players to visualize the game state.
+
+Plan for Development:
+Start by creating the game board and initializing the pits and stores.
+Implement the main game loop and basic move mechanics.
+Add rules for extra turns and capturing stones.
+Test and validate the end-game conditions and scoring.
+Refine the user interface for clear input/output in the console.
+
+Next Steps:
+Code the initial setup and game loop.
+Implement the move mechanics and validate inputs.
+Test incrementally after adding features to ensure correctness.
+By breaking the project into manageable steps, I hope to tackle potential challenges effectively. While the complexity of the rules is a concern, a structured approach should allow for smooth development.
